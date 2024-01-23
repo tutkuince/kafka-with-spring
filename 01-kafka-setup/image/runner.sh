@@ -5,9 +5,9 @@
 clusterId=${KAFKA_CLUSTER_ID:-$(kafka-storage.sh random-uuid)}
 echo "Kafka Cluster ID : ${clusterId}"
 
-
 # For the first time, format the storage. It would create couple of files (meta.properties, checkpoint file).
 # If it is already formatted, it would be ignored.
+
 echo "Formatting storage"
 kafka-storage.sh format -t $clusterId -c /kafka/config/kraft/server.properties
 
