@@ -1,6 +1,6 @@
 FROM eclipse-temurin:17-jre-focal
 
-ADD https://downloads.apache.org/kafka/3.4.0/kafka_2.13-3.4.0.tgz kafka.tgz
+ADD https://archive.apache.org/dist/kafka/3.4.0/kafka-3.4.0-src.tgz kafka.tgz
 
 RUN tar -xvzf kafka.tgz
 
