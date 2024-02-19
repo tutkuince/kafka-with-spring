@@ -5,3 +5,8 @@ services:
     image: bitnami/kafka:latest
     ports:
       - "9092:9092"
+    environment:
+      - KAFKA_CFG_NODE_ID=1
+      - KAFKA_KRAFT_CLUSTER_ID=efaruUJZS_CQ8jqfRmndqQ
+      - KAFKA_CFG_PROCESS_ROLES=controller,broker
+      - KAFKA_CFG_CONTROLLER_QUORUM_VOTERS=1@kafka-1:9091
