@@ -1,0 +1,5 @@
+# create topic -> name of the topic is customer.visit
+    - docker exec broker kafka-topics --bootstrap-server broker:9092 --create --topic "customer.visit"
+
+# Read messages from the topic
+    - docker exec --interactive --tty broker kafka-console-consumer --bootstrap-server broker:9092 --topic "customer.visit" --from-beginning

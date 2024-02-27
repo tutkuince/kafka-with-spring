@@ -1,0 +1,10 @@
+incetutku:
+  kafka:
+    topic: customer.visit
+
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+    consumer:
+      group-id: events
